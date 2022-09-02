@@ -1,14 +1,33 @@
 {
   "$schema": "https://turborepo.org/schema.json",
+  "globalDependencies": ["$REGION", "$TABLE_NAME"],
   "pipeline": {
     "build": {
-      "dependsOn": ["^build"],
-      "outputs": ["dist/**", ".next/**"]
+      "outputs": [
+        "dist/**",
+        ".next/**",
+        "public/dist/**"
+      ],
+      "dependsOn": [
+        "^build","$REGION", "$TABLE_NAME"
+      ]
+    },
+    "test": {
+      "outputs": [
+        "coverage/**"
+      ],
+      "dependsOn": []
     },
     "lint": {
+      "dependsOn": [
+        "^build"
+      ],
       "outputs": []
     },
     "dev": {
+      "cache": false
+    },
+    "clean": {
       "cache": false
     }
   }

@@ -1,0 +1,7 @@
+{
+  "lint": true,
+  "name": "sst-turbo",
+  "stage": "dev",
+  "region": "eu-west-1",
+  "main": "lib/index.ts"
+}

@@ -1,0 +1,22 @@
+{
+  "name": "@my-sst-app/service2",
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {},
+  "dependencies": {
+    "aws-sdk": "^2.1205.0"
+  },
+  "devDependencies": {
+    "@types/aws-lambda": "^8.10.102",
+    "esbuild": "^0.14.38",
+    "esbuild-register": "^3.3.2",
+    "eslint": "^7.32.0",
+    "eslint-config-custom-server": "*",
+    "jest": "^26.6.3",
+    "jest-presets": "*",
+    "nodemon": "^2.0.15",
+    "supertest": "^6.1.3",
+    "tsconfig": "*",
+    "typescript": "^4.5.3"
+  }
+}
